@@ -1,0 +1,14 @@
+{
+    "caption": "Expand",
+    "doc": "Causes splash creen control element to expand its parent group to full screen.",
+    "fields": {
+        "AAP": {
+            "caption": "Animate",
+            "default_val": true,
+            "editor": "DynamicValue",
+            "name": "Animate",
+            "rank": 0,
+            "value": "boolean"
+        }
+    }
+}

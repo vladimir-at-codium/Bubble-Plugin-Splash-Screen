@@ -1,0 +1,4 @@
+{
+    "caption": "Cancel",
+    "doc": "Forces splash screen control element to instantly collapse parent group without animation. This action is desgined to immediately resize parent group to its original size before page will be scrolled to target element from workflow process. It is the same as Collapse with Animate set to false."
+}

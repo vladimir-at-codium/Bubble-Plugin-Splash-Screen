@@ -1,0 +1,15 @@
+{
+    "caption": "Collapse",
+    "doc": "Causes splash screen control element to collapse its parent group in a usual way animating collapsing process just like it would normally do when scroll event occurs.",
+    "fields": {
+        "AAQ": {
+            "caption": "Animate",
+            "default_val": true,
+            "doc": "",
+            "editor": "DynamicValue",
+            "name": "Animate",
+            "rank": 0,
+            "value": "boolean"
+        }
+    }
+}

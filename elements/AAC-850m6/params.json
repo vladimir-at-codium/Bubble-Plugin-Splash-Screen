@@ -1,0 +1,89 @@
+{
+    "add_is_visible": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 0,
+        "width": 0
+    },
+    "display": "Splash Screen",
+    "events": {
+        "AAG": {
+            "caption": "Collapsed",
+            "doc": "Occurs when parent group is collapsed to its original state after collapse animation completes. This event occurs after Collapsed state becomes \"Yes\".",
+            "name": "Collapsed"
+        },
+        "AAH": {
+            "caption": "Collapsing",
+            "doc": "Occurs when parent group is about collapse to its original state before collapse animation starts. This event occurs before Collapsed state becomes \"Yes\".",
+            "name": "Collapsing"
+        },
+        "AAR": {
+            "caption": "Expanded",
+            "doc": "Occurs when parent group is expanded to full screen, either automatically on page load, scroll event or by execution of Expand action. This event occurs after Expanded state becomes \"yes\".",
+            "name": "Expanded"
+        },
+        "AAS": {
+            "caption": "Expanding",
+            "doc": "Occurs when parent group is about to expand to full screen before expand animation starts. This event occurs before Expanded state becomes \"Yes\".",
+            "name": "Expanding"
+        }
+    },
+    "fields": {
+        "AAD": {
+            "caption": "Dimension",
+            "default_val": "Vertical",
+            "doc": "Indicates dimension the parent group will be expanded by. Vertical or Horizontal dimension indicates that group will be expanded to occupy full viewport height or width only, while Both indicates that group will occupy whole viewport area.",
+            "editor": "Dropdown",
+            "in_style": false,
+            "name": "Dimension",
+            "options": "Vertical,Horizontal,Both",
+            "rank": 0
+        },
+        "AAE": {
+            "caption": "Duration",
+            "default_val": 200,
+            "doc": "Duration in milliseconds of resize effect when splash group collapses to its original size. Set to 0 to disable resize transition effect; existing group effect will be applied, if any.",
+            "editor": "StaticNumber",
+            "name": "Duration",
+            "rank": 1
+        },
+        "AAN": {
+            "caption": "Auto-Collapse",
+            "default_val": "Auto",
+            "doc": "Determines condition when parent group collapses. On Scroll - paren group collapses on scroll event when scroll position is positive. None - parent group collapses only when instructed by Collapse action.",
+            "editor": "Dropdown",
+            "name": "Auto-Collapse",
+            "options": "On Scroll,None",
+            "rank": 2
+        },
+        "AAO": {
+            "caption": "Auto-Expand",
+            "doc": "Determines condition when parent group expands. On Load - paren group expands only on page load if scroll position is zero, it's never animated. On Scroll - paren group expands each time when scroll position is zero and is always animated. None - parent group expands only when instructed by Expand action.",
+            "editor": "Dropdown",
+            "name": "Auto-Expand",
+            "options": "On Load,On Scroll,None",
+            "rank": 3
+        }
+    },
+    "icon": "ion-android-checkbox-blank",
+    "states": {
+        "AAF": {
+            "caption": "Expanded",
+            "doc": "Indicates whether parent group is currently expanded. Value of this state becomes \"Yes\" after expand animation (if any) completes and turns into \"No\" before collapse animation starts.",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n    return false;\n}"
+            },
+            "name": "Expanded",
+            "value": "boolean"
+        },
+        "AAI": {
+            "caption": "Collapsed",
+            "doc": "Indicates whether parent group is currently collapsed. Value of this state becomes \"Yes\" after collapse animation (if any) completes and tursn into \"No\" before expand animation starts.",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n    return false;\n}"
+            },
+            "name": "Collapsed",
+            "value": "boolean"
+        }
+    }
+}

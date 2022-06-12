@@ -1,0 +1,12 @@
+{
+    "categories": {
+        "0": "technical"
+    },
+    "demo_page": "https://splashblockpluginexample.bubbleapps.io/version-test",
+    "description": "Splash Screen element of this plugin effectively turns parent Group container into a splash screen until a scroll event occurs or it is instructed to restore container's style to its original state by one of its actions.\n\nIt temporary replaces style of parent Group container element to make it occupy all available viewport area using 100% width and 100vh height. This requires parent Group element to be located at the top level of Page hierarchy and to be visible when page is loaded.\n\nFor more details see demo app below.",
+    "image": "//s3.amazonaws.com/appforest_uf/f1655011308302x672812681876427900/Splash%20Screen.svg",
+    "license": "open_source",
+    "link": "https://codiumgroup.io/plugins/1655058770397x840789993092275600",
+    "name": "Splash Screen",
+    "plugin_instructions": "Place Splash Screen element into a group to be expanded and setup its parameters to control splash behavior."
+}
