@@ -50,7 +50,7 @@
                 
                 if (element.AzlRoog1) {
                 	element.AzlRoog1.publishState('Collapsed', false);
-                    element.AzlRoog1.triggerEvent('Expanding', err => { if (err) console.log(err); });
+                    element.AzlRoog1.triggerEvent('Expanding', err => { if (err) console.error(err); });
                 }
 
                 if (animate && duration) {
@@ -96,7 +96,7 @@
                         element.ail4nwsr = false;
                         if (element.AzlRoog1) {
                             element.AzlRoog1.publishState('Expanded', true);
-                            element.AzlRoog1.triggerEvent('Expanded', err => { if (err) console.log(err); });
+                            element.AzlRoog1.triggerEvent('Expanded', err => { if (err) console.error(err); });
                         }
                     }
 
@@ -126,7 +126,7 @@
                 
                 if (element.AzlRoog1) {
                     element.AzlRoog1.publishState('Expanded', false);
-                    element.AzlRoog1.triggerEvent('Collapsing', err => { if (err) console.log(err); });
+                    element.AzlRoog1.triggerEvent('Collapsing', err => { if (err) console.error(err); });
                 }
 
                 if (!animate) {
@@ -145,7 +145,7 @@
 
                         if (element.AzlRoog1) {
                             element.AzlRoog1.publishState('Collapsed', true);
-                            element.AzlRoog1.triggerEvent('Collapsed', err => { if (err) console.log(err); });
+                            element.AzlRoog1.triggerEvent('Collapsed', err => { if (err) console.error(err); });
                         }
                     }
 
